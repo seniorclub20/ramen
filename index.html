@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width">
+    <title>ラーメン太一</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header> <!== ファーストビューの一番上(非常に重要) ==>
+      <div class="container">      
+        <h1>ラーメン太一</h1>
+        <nav>
+          <ul>
+            <li><a href="#">ホーム</a></li>
+	    <li><a href="#">店舗紹介</a></li>
+            <li><a href="#">メニュー</a></li>
+            <li><a href="#">アクセス</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="#">お知らせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="hero">
+        <figure> <!== 図や表 ==>
+          <img src="images/hero.jpg" alt="ラーメン店の写真">
+        </figure>
+      </section>
+      <section id="about">
+        <h2>店舗紹介</h2>
+        <p>昔ながらの屋台味から一人でも多くの人にラーメンを食べてもらうため新しいブランドを展開しています。それぞれの個性ある味わいをお楽しみください。</p>
+      </section>
+      <section id="menu">
+        <h2>メニュー</h2>
+        <table>
+          <tr> <!== 行に相当 ==>
+            <td>チャーシュー麺</td> <!== 列に相当 ==>
+            <td>￥900</td>
+          </tr>
+          <tr>
+            <td>野菜ラーメン</td>
+            <td>￥880</td>
+          </tr>
+          <tr>
+            <td>醤油ラーメン</td>
+            <td>￥690</td>
+          </tr>
+          <tr>
+            <td>味噌ラーメン</td>
+            <td>￥900</td>
+          </tr>
+          <tr>
+            <td>五目あんかけラーメン</td>
+            <td>￥720</td>
+          </tr>
+        </table>
+      </section>
+      <section id="access">
+        <h2>アクセス</h2>
+        <p>〒310=0831</p>
+        <p>茨城県水戸市朝日町XX=XX=XXXX</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6425.843816029387!2d140.4887846!3d36.3626704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602225140dafcf45%3A0x8f29a1907c2ca33f!2z5pyd5pel55S65YWQ56ul5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1743207158291!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no=referrer=when=downgrade"></iframe> <!== width:"100%"で画面いっぱいに表示 ==>
+      </section>
+      <section id="contact">
+        <h2>お問い合わせ</h2>
+        <p>お気軽にお問い合わせください</p>
+        <form action="index.html" method="post">
+          <div>
+            <label for="name">お名前</label> <!== インライン要素 ==>
+            <input type="text" name="name" id="name"> <!== id="name"(お名前を選択しても入力できる) ==> <!== インライン要素(お名前を箱が並ぶ) ==>
+          </div>
+          <div>
+            <label for="email">メール</label>
+            <input type="text" name="email" id="email"> <!== inputは1行 ==>
+          </div>
+          <div>
+            <label for="naiyou">内容</label>
+            <textarea name="naiyou" rows="8" cols="80" id="naiyou"></textarea> <!== 8行×80文字(1行) ==>
+          </div>
+          <div>
+            <input type="submit" value="送信する">
+          </div>
+        </form>
+      </section>
+    </main>
+    <aside> <!== 補足情報 ==>
+      <h2>お知らせ</h2>
+      <p>「北関東ラーメンフェスタ2025」出店店舗決定</p>
+      <figure>
+        <img src="images/icon.png" alt="ラーメンアイコン">
+      </figure>
+      <a href="#" class="button">詳細はこちらから</a> <!== リンクを直接ボタン ==>
+    </aside>
+    <footer>
+      🄫ラーメン太一
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+/* ========================================
+
+リセットCSS
+
+======================================== */
+* { /* すべての要素の内余白と外余白に対して */
+  padding: 0;
+  margin: 0;
+}
+
+/* ========================================
+
+header
+
+======================================== */
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+header h1 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  padding-bottom: 10px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ========================================
+
+main
+
+======================================== */
+#hero figure img {
+  width: 100%; /* figureに対してピタッとはまる */
+}
+#about {
+  background-color: white;
+  padding: 40px 20px; /* 上下を大の時はスマホ対応を考慮して左右を小さめに */
+  text-align: center;
+}
+#about h2 {
+  margin-bottom: 40px;
+  letter-spacing: 2px; /* 文字間 */
+}
+#menu {
+  background-color: black;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+#menu h2 {
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+#menu table {
+  width: 100%; /* 横幅は100%だけれど */
+  max-width: 350px; /* 最大の幅が決まっている→スマホ対応で便利な書き方 */
+  margin: 0 auto;
+  text-align: left;
+}
+#menu table td {
+  padding: 10px;
+}
+#access {
+  background-color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+#access h2 {
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+#access iframe {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  padding: 30px;
+}
+#contact {
+  background-color: black;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+#contact h2 {
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+#contact form label {
+  display: block;
+}
+#contact form input {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+}
+#contact form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+}
+#contact form input[type="submit"] { /* inputでtypeが(submit)のものだけ→classを付けない絞り込み方法 */
+  width: 300px;
+  background-color: #eee;
+}
+
+/* ========================================
+
+aside
+
+======================================== */
+aside {
+  background-color: #eee;
+  padding: 40px 20px;
+  text-align: center;
+}
+aside h2 {
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+aside figure {
+  padding: 20px;
+}
+aside figure img {
+  width: 200px;
+}
+aside .button { /* aはインライン要素 */
+  background-color: black;
+  padding: 20px 100px; /* 高さの指定がうまくいかない */
+  display: inline-block;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+}
+aside a:hover { /* 上にマウスが乗った時 */
+  opacity: .8;
+}
+
+/* ========================================
+
+footer
+
+======================================== */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+
+
+
